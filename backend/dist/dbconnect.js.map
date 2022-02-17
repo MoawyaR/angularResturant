@@ -1,0 +1,1 @@
+{"version":3,"file":"dbconnect.js","sourceRoot":"","sources":["../src/dbconnect.ts"],"names":[],"mappings":";;;;;AAAA,kDAA0B;AAE1B,MAAM,SAAS,GAAE;IACb,IAAI,EAAE,WAAW;IACjB,IAAI,EAAE,MAAM;IACZ,QAAQ,EAAE,EAAE;IACZ,QAAQ,EAAE,WAAW;CACxB,CAAA;AAED,IAAI,UAA4B,CAAC;AACjC,UAAU,GAAG,eAAK,CAAC,gBAAgB,CAAC,SAAS,CAAC,CAAC;AAE/C,kBAAe,UAAU,CAAC"}

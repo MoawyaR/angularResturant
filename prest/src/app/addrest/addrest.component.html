@@ -1,0 +1,152 @@
+<body>
+
+    <form (ngSubmit)="onSubmit()" #restaurantForm="ngForm" style="width: 50vw;">
+
+        <div   class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title"
+                   required
+                   [(ngModel)]="restaurant.title" name="title"
+                   #title="ngModel">
+            <div [hidden]="title.valid || title.pristine"
+                 class="alert alert-danger">
+                 title is required
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label for="cuisines">Cuisines</label>
+            <input type="text" class="form-control" id="cuisines"
+                   required
+                   [(ngModel)]="restaurant.cuisines" name="cuisines"
+                   #cuisines="ngModel">
+            <div [hidden]="cuisines.valid || cuisines.pristine"
+                 class="alert alert-danger">
+                 cuisines is required
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label for="lat">latitude</label>
+            <input type="text" class="form-control" id="lat"
+                   required
+                   [(ngModel)]="restaurant.lat" name="lat"
+                   #lat="ngModel">
+            <div [hidden]="lat.valid || lat.pristine"
+                 class="alert alert-danger">
+                 latitude is required
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label for="lng">longitude</label>
+            <input type="text" class="form-control" id="lng"
+                   required
+                   [(ngModel)]="restaurant.lng" name="lng"
+                   #lng="ngModel">
+            <div [hidden]="lng.valid || lng.pristine"
+                 class="alert alert-danger">
+                 longitude is required
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label for="rate">rate</label>
+            <input type="text" class="form-control" id="rate"
+                   required
+              
+       [(ngModel)]="restaurant.rate" name="rate"
+                   #rate="ngModel">
+      <div [hidden]="rate.valid || rate.pristine"
+                 class="alert alert-danger">
+                 rate is required
+            </div>
+          </div>
+          <br>
+          <div>
+            <label for="image">uplod file</label>
+            <input type="file" class="form-control" (change)="onFileSelected">
+          </div>
+      
+          <button type="submit" class="btn btn-success" [disabled]="!restaurantForm.form.valid">Add</button>
+      
+         <!--<div class="form-group">
+            <label for="" class=" form-control-label"> Image </label>
+            <input type="file" (change)="onSelectedImage($event);" formControlName="image" id="" name="image"
+                accept="image/png,image/jpg,image/jpeg" style="border: none!important" class="form-control">
+        </div>-->
+
+    </form>   
+    
+              
+   
+</body>
+
+
+    
+<!-- <form (ngSubmit)="onSubmit()" #restaurantForm="ngForm" style="width: 50vw;">
+
+  <div   class="form-group">
+      <label for="title">title</label>
+      <input type="text" class="form-control" id="title"
+             required
+             [(ngModel)]="restaurant.title" name="title"
+             #title="ngModel">
+      <div [hidden]="title.valid || title.pristine"
+           class="alert alert-danger">
+           title is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="cuisines">Cuisines</label>
+      <input type="text" class="form-control" id="cuisines"
+             required
+             [(ngModel)]="restaurant.cuisines" name="cuisines"
+             #cuisines="ngModel">
+      <div [hidden]="cuisines.valid || cuisines.pristine"
+           class="alert alert-danger">
+           cuisines is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lat">latitude</label>
+      <input type="text" class="form-control" id="lat"
+             required
+             [(ngModel)]="restaurant.lat" name="lat"
+             #lat="ngModel">
+      <div [hidden]="lat.valid || lat.pristine"
+           class="alert alert-danger">
+           latitude is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lng">longitude</label>
+      <input type="text" class="form-control" id="lng"
+             required
+             [(ngModel)]="restaurant.lng" name="lng"
+             #lng="ngModel">
+      <div [hidden]="lng.valid || lng.pristine"
+           class="alert alert-danger">
+           longitude is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="rate">rate</label>
+      <input type="text" class="form-control" id="rate"
+             required
+        
+ [(ngModel)]="restaurant.rate" name="rate"
+             #rate="ngModel">
+div [hidden]="rate.valid || rate.pristine"
+           class="alert alert-danger">
+           rate is required
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!restaurantForm.form.valid">Add</button>
+
+</form> -->                                                                                                                                                

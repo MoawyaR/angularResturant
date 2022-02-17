@@ -1,0 +1,23 @@
+<div style=" background: rgba(0, 0, 0, 0.774);">
+
+<div class="container " >
+    <div class="row justify-content-md-center">
+        <ng-container *ngFor="let item of restitem " >
+            <div id ="res"class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" [src]="item.image" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.title}}</h5>
+                      <p class="card-text">{{item.cuisines}}</p>
+                      <div class="movie_social">
+                      <app-rate [rating]="item.rate"></app-rate>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+  </div>
+
+
+  </div>

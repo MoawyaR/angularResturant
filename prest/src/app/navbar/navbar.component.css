@@ -1,0 +1,71 @@
+
+  #topbar {
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    background: rgba(0, 0, 0, 0.774);
+  
+    
+  
+  }
+  #topbar.topbar-scrolled {
+    top: -40px;
+    
+  }
+  #topbar .contact-info i {
+    font-style: normal;
+    color: #d9ba85;
+    
+  }
+  #topbar .contact-info i span {
+    padding-left: 5px;
+    color: hsl(0, 0%, 100%);
+    
+  }
+ 
+  .navbar {
+    padding: 0;
+    background: rgba(7, 7, 7, 0.774);
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .navbar li {
+    position: relative;
+  }
+  .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  .navbar a i, .navbar a:focus i {
+    font-size: 30px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #d9ba85;
+  }
+  
+#logo{
+  padding-left: 20px;
+    font-size: xx-large;
+    font-style: italic;
+    color: #d9ba85;
+}
+
+.navbar a span{
+  color: #ffe601;
+  font-size: x-large;
+ padding-right: 5px;
+}
+  
